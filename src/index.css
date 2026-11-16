@@ -100,3 +100,11 @@ input[type="range"]::-webkit-slider-thumb:hover {
   transform: scale(1.12);
   box-shadow: 0 4px 12px rgba(0, 113, 227, 0.35);
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
