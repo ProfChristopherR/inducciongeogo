@@ -51,37 +51,37 @@ const HOTSPOTS: DroneHotspot[] = [
 
 const DRONE_ONE_LINER: Record<string, { image: string; shortName: string; line: string }> = {
   'dji-neo': {
-    image: MEDIA_CATALOG.grade3Drones.src,
+    image: MEDIA_CATALOG.droneDjiNeo.src,
     shortName: 'DJI NEO',
     line: 'Vuela seguro en sala con hélices enjauladas.'
   },
   'fpv-indoor': {
-    image: MEDIA_CATALOG.grade3Drones.src,
+    image: MEDIA_CATALOG.droneFpvIndoor.src,
     shortName: 'FPV Indoor',
     line: 'Ágil y protegido para maniobrar en interiores.'
   },
   'fpv-outdoor': {
-    image: MEDIA_CATALOG.droneExplodedView.src,
-    shortName: 'FPV Outdoor 5"',
+    image: MEDIA_CATALOG.droneFpvOutdoor.src,
+    shortName: 'FPV Outdoor',
     line: 'Chasis de carbono con electrónica a la vista.'
   },
   'dji-mini-4k': {
-    image: MEDIA_CATALOG.grade3Drones.src,
+    image: MEDIA_CATALOG.droneDjiMini4k.src,
     shortName: 'DJI Mini 4K',
     line: 'Dron escuela de 3° Medio para grabar en 4K.'
   },
   'phantom-4': {
-    image: MEDIA_CATALOG.photogrammetry3D.src,
+    image: MEDIA_CATALOG.dronePhantom4.src,
     shortName: 'Phantom 4 Pro',
     line: 'Mapea el liceo para crear modelos en 3D.'
   },
   'mavic-3t': {
-    image: MEDIA_CATALOG.thermalSensorSar.src,
+    image: MEDIA_CATALOG.droneMavic3t.src,
     shortName: 'Mavic 3T (Térmico)',
     line: 'Detecta calor humano en rescates nocturnos.'
   },
   'mavic-3m': {
-    image: MEDIA_CATALOG.ndviAgriculture.src,
+    image: MEDIA_CATALOG.droneMavic3m.src,
     shortName: 'Mavic 3M (NDVI)',
     line: 'Cuida cultivos midiendo la salud de las plantas.'
   }

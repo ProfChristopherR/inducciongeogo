@@ -198,5 +198,61 @@ export const MEDIA_CATALOG: Record<string, MediaItem> = {
     src: media('segundo_decision.webp'),
     type: 'image',
     realPhotoSlot: 'public/media/segundo_decision.webp — Foto aérea real del entorno de San Nicolás / Ñuble tomada con dron del liceo.'
+  },
+  droneDjiNeo: {
+    id: 'droneDjiNeo',
+    title: 'DJI NEO • Micro-Dron Caged para Vuelo Seguro en Sala',
+    description: 'Dron DJI NEO de 135 g con protectores integrales de hélices 360°.',
+    src: media('drone_dji_neo.webp'),
+    type: 'image',
+    realPhotoSlot: 'public/media/drone_dji_neo.webp — Foto del DJI NEO del liceo.'
+  },
+  droneFpvIndoor: {
+    id: 'droneFpvIndoor',
+    title: 'Dron FPV Indoor (BetaFPV Aquila16)',
+    description: 'Micro-dron FPV CineWhoop con ductos protectores para vuelo ágil en interiores.',
+    src: media('drone_fpv_indoor.webp'),
+    type: 'image',
+    realPhotoSlot: 'public/media/drone_fpv_indoor.webp — Foto del FPV Indoor Aquila16 del liceo.'
+  },
+  droneFpvOutdoor: {
+    id: 'droneFpvOutdoor',
+    title: 'Dron FPV Outdoor Táctico (Manta 3.6 / Carbono)',
+    description: 'Cuadricóptero FPV de fibra de carbono 3K con electrónica y motores brushless al descubierto.',
+    src: media('drone_fpv_outdoor.webp'),
+    type: 'image',
+    realPhotoSlot: 'public/media/drone_fpv_outdoor.webp — Foto del FPV Outdoor Manta 3.6 del liceo.'
+  },
+  droneDjiMini4k: {
+    id: 'droneDjiMini4k',
+    title: 'DJI Mini 4K • Aeronave Escuela Sub-249g',
+    description: 'Dron plegable ultraligero DJI Mini 4K con cámara estabilizada en gimbal de 3 ejes.',
+    src: media('drone_dji_mini_4k.webp'),
+    type: 'image',
+    realPhotoSlot: 'public/media/drone_dji_mini_4k.webp — Foto del DJI Mini 4K del liceo.'
+  },
+  dronePhantom4: {
+    id: 'dronePhantom4',
+    title: 'DJI Phantom 4 Pro / RTK • Fotogrametría y Topografía',
+    description: 'Dron DJI Phantom 4 Pro con obturador mecánico de 1 pulgada para levantamientos cartográficos.',
+    src: media('drone_phantom_4.webp'),
+    type: 'image',
+    realPhotoSlot: 'public/media/drone_phantom_4.webp — Foto del DJI Phantom 4 Pro del liceo.'
+  },
+  droneMavic3t: {
+    id: 'droneMavic3t',
+    title: 'DJI Mavic 3 Enterprise Thermal (3T) • Búsqueda y Rescate SAR',
+    description: 'Dron industrial DJI Mavic 3T con cámara térmica radiométrica y zoom óptico híbrido 56x.',
+    src: media('drone_mavic_3t.webp'),
+    type: 'image',
+    realPhotoSlot: 'public/media/drone_mavic_3t.webp — Foto del DJI Mavic 3T del liceo.'
+  },
+  droneMavic3m: {
+    id: 'droneMavic3m',
+    title: 'DJI Mavic 3 Multispectral (3M) • Agricultura de Precisión NDVI',
+    description: 'Dron industrial DJI Mavic 3M con cámara multiespectral de 4 bandas y módulo RTK.',
+    src: media('drone_mavic_3m.webp'),
+    type: 'image',
+    realPhotoSlot: 'public/media/drone_mavic_3m.webp — Foto del DJI Mavic 3M del liceo.'
   }
 }

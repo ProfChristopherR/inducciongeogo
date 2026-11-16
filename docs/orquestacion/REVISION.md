@@ -21,3 +21,4 @@
 - **Consola / Excepciones:** **0 errores** en consola JS o excepciones no capturadas.
 - **Imágenes rotas:** **0** en las 56 vistas.
 - **Navegación URL y Teclado:** Verificado `ArrowRight` en `?t=segundo&c=class-1&s=0` -> `?t=segundo&c=class-1&s=1` y botón "← Inducciones" regresando limpiamente a la portada (`?t` limpiado).
+

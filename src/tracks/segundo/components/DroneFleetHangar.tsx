@@ -51,13 +51,13 @@ const DRONE_GRADE_MAP: Record<string, GradeAssignment> = {
 }
 
 const DRONE_VISUAL_MAP: Record<string, string> = {
-  'dji-neo': MEDIA_CATALOG.grade3Drones.src,
-  'fpv-indoor': MEDIA_CATALOG.grade3Drones.src,
-  'fpv-outdoor': MEDIA_CATALOG.droneExplodedView.src,
-  'dji-mini-4k': MEDIA_CATALOG.grade3Drones.src,
-  'phantom-4': MEDIA_CATALOG.photogrammetry3D.src,
-  'mavic-3m': MEDIA_CATALOG.ndviAgriculture.src,
-  'mavic-3t': MEDIA_CATALOG.thermalSensorSar.src
+  'dji-neo': MEDIA_CATALOG.droneDjiNeo.src,
+  'fpv-indoor': MEDIA_CATALOG.droneFpvIndoor.src,
+  'fpv-outdoor': MEDIA_CATALOG.droneFpvOutdoor.src,
+  'dji-mini-4k': MEDIA_CATALOG.droneDjiMini4k.src,
+  'phantom-4': MEDIA_CATALOG.dronePhantom4.src,
+  'mavic-3m': MEDIA_CATALOG.droneMavic3m.src,
+  'mavic-3t': MEDIA_CATALOG.droneMavic3t.src
 }
 
 export const DroneFleetHangar: React.FC = () => {
@@ -145,17 +145,25 @@ export const DroneFleetHangar: React.FC = () => {
         {filteredDrones.map((drone) => {
           const isSelected = activeDrone.id === drone.id
           const gradeInfo = DRONE_GRADE_MAP[drone.id]
+          const thumbSrc = DRONE_VISUAL_MAP[drone.id] || MEDIA_CATALOG.grade3Drones.src
           return (
             <button
               key={drone.id}
               onClick={() => setSelectedDroneId(drone.id)}
-              className={`flex flex-col justify-between rounded-2xl p-3 text-left transition-all duration-200 active:scale-[0.98] ${
+              className={`group flex flex-col justify-between rounded-2xl p-2.5 text-left transition-all duration-200 active:scale-[0.98] ${
                 isSelected
                   ? 'bg-slate-900 text-white shadow-lg ring-2 ring-blue-500/60 -translate-y-0.5'
                   : 'apple-glass hover:bg-white/95 text-slate-800 hover:-translate-y-0.5'
               }`}
             >
-              <div className="space-y-1">
+              <div>
+                <div className="relative h-20 w-full rounded-xl overflow-hidden bg-slate-950 mb-2">
+                  <img
+                    src={thumbSrc}
+                    alt={drone.name}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
                 <span
                   className={`text-[11px] font-bold block truncate ${
                     isSelected ? 'text-sky-300' : 'text-blue-700'
@@ -167,13 +175,13 @@ export const DroneFleetHangar: React.FC = () => {
                     ? '3° y 4° Medio'
                     : '3° Medio'}
                 </span>
-                <h3 className="text-xs sm:text-sm font-extrabold leading-tight line-clamp-2">
+                <h3 className="text-xs sm:text-sm font-extrabold leading-tight line-clamp-2 mt-0.5">
                   {drone.name}
                 </h3>
               </div>
 
               <div
-                className={`mt-3 flex items-center justify-between text-xs font-mono font-semibold ${
+                className={`mt-2.5 flex items-center justify-between text-xs font-mono font-semibold ${
                   isSelected ? 'text-slate-300' : 'text-slate-600'
                 }`}
               >
